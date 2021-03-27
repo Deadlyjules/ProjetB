@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Brownie Clicker V2</title>
+    <link rel="icon" type="image/png" href="brownie.png" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+
+    <style>
+        #brownie {
+            max-width: 50%;
+            height: auto;
+        }
+
+        .PULSE {
+            -webkit-animation: PULSE 1s infinite; 
+            -ms-animation: PULSE 1s infinite;
+            animation: PULSE 1.25s infinite; 
+        }
+
+        @keyframes PULSE{
+            0%{color:rgba(0,0,0);}	
+            110%{color: black;}
+        }
+
+    </style>
+
+</head>
+<body class="w3-theme">
+    <div class="w3-red w3-margin w3-center w3-padding w3-card-4">
+        <h2>Brownie Clicker<span class="PULSE"> V2!</span></h2>
+    </div>
+
+    <!-- Colone 1 -->
+    <div class="w3-row">
+        <div class="w3-third w3-container">
+            <div class="w3-row">
+                <div class="w3-margin w3-center w3-red w3-rest w3-card-4">
+                    <h3>Upgrades</h3><br>
+                    <div>
+                        <button id="up1">Clicker</button><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Colone 2 -->
+        <div class="w3-third w3-container">
+            <div class="w3-row">
+                <div class="w3-margin-top w3-center w3-red w3-rest w3-card-4">
+                    <img id="brownie" src="brownie.png" style="position: fixed;top: 17%;left: 42%"><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+    <!-- Colone 3 -->
+        <div class="w3-third w3-container">
+            <div class="w3-row">
+                <div class="w3-margin w3-center w3-red w3-rest w3-card-4">
+                    <h3 id="nbbro" >0 Brownies</h3><br> 
+                    <h4 id="prod">Vous produisez 0 brownies par seconde</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js" ></script>
+</body>
+<html>
